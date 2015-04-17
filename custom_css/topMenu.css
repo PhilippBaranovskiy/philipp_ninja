@@ -1,0 +1,59 @@
+.menu-top-menu-container {
+	background-color: rgb(102, 102, 102);
+	color: #ECF1EF;
+}
+#menu-top-menu {
+	margin: 0px;
+	padding: 10px;
+	list-style: none;
+	text-align: center;
+}
+#menu-top-menu .menu-item {
+	display: inline;
+	font-size: 1em;
+	margin: 0px 10px;
+}
+#menu-top-menu .menu-item a {
+	text-decoration: none;
+	color: inherit;
+}
+#menu-top-menu .menu-item a[href='/'] {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+}
+#menu-top-menu .menu-item a[href='/']:hover {
+	text-decoration: none;
+	text-shadow: 0px 0px 10px black;
+}
+#menu-top-menu .menu-item a[href='/']:before {
+	content: '\48';
+	display: inline;
+	font-family: "SvgIcons";
+	position: absolute;
+	left: 25%;
+	font-size: 1.3em;
+
+}
+#menu-top-menu .menu-item a[href='/']:after {
+	border-color: transparent;
+}
+#menu-top-menu .menu-item a:hover {
+	text-decoration: underline;
+}
+
+#menu-top-menu .current-menu-item a {
+	position: relative;
+}
+#menu-top-menu .current-menu-item a:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 0px; height: 0px;
+	left: 50%;
+	left: calc(50% - 10px);
+	border: 10px solid transparent;
+	border-bottom-color: #ECF1EF;
+	/*border-bottom-color: black;*/
+	top: 17px;
+}

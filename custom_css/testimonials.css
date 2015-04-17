@@ -1,0 +1,27 @@
+.testimonial {
+	font-family: "Helvetica", "Helvetica Neue";
+	margin: 40px auto;
+}
+.testimonial--projectPageTestimonial {
+	/*float: right;
+	width: 33%;*/
+}
+.testimonial__avatar {
+	margin: 0;
+	overflow: hidden;
+}
+.testimonial__avatar__src {
+	float: left;
+}
+.testimonial__avatar__caption {
+	position: relative;
+	margin-left: 15px;
+	top: 20px;
+	display: inline-block;
+}
+.testimonial__text {
+	clear: left;
+	font-size: 0.8125em;
+	margin-top: 25px;
+	line-height: 1.25em;
+}

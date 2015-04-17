@@ -1,0 +1,121 @@
+.info
+{
+	font-family: 'Raleway';
+	font-size: 1.6em;
+	font-size: 1.6rem;
+
+	max-width: 90%;
+	margin: auto;
+	padding: 25px 50px;
+
+	color: #303030;
+
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow: 0 0 3px 1px #c0c0c0;
+}
+@media (min-width: 460px)
+{
+	.info
+	{
+		width: 360px;
+		margin-top: 70px;
+
+	}
+}
+.info__name {
+	font-size: 1.6em;
+	font-size: 1.6rem;
+}
+.info__status {
+	font-size: 0.6em;
+	margin-top: -15px;
+}
+.info__list
+{
+	font-size: 0.63em;
+	font-size: 1rem;
+
+	padding: 0;
+
+	list-style: none;
+}
+.info__list__item__link {
+	margin: 3px;
+}
+.info__list__item__link--icon {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+	bottom: -8px;
+	background: url(../icons/icon_sprite.png) no-repeat top left;
+}
+.ig-b-
+{
+	display: inline-block;
+	position: relative;
+}
+.ig-b- img
+{
+	visibility: hidden;
+}
+.ig-b-:hover
+{
+	background-position: 0 -60px;
+}
+.ig-b-:active
+{
+	background-position: 0 -120px;
+}
+.ig-b-16
+{
+	width: 16px;
+	height: 16px;
+
+	bottom: -10px;
+
+	background: url(//badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0;
+}
+.ig-b-24
+{
+	width: 24px;
+	height: 24px;
+
+	bottom: -5px;
+
+	background: url(//badges.instagram.com/static/images/ig-badge-sprite-24.png) no-repeat 0 0;
+}
+
+.sprite-email { background-position: 0 0; width: 24px; height: 24px; }
+.sprite-fb { background-position: 0 -172px; width: 24px; height: 24px; }
+.sprite-gh { background-position: 0 -344px; width: 24px; height: 24px; }
+.sprite-in { background-position: 0 -516px; width: 24px; height: 24px; }
+.sprite-mk { background-position: 0 -688px; width: 24px; height: 24px; }
+.sprite-skype { background-position: 0 -860px; width: 24px; height: 24px; }
+.sprite-viber { background-position: 0 -1032px; width: 24px; height: 24px; }
+.sprite-vk { background-position: 0 -1204px; width: 24px; height: 24px; }
+.sprite-wapp { background-position: 0 -1376px; width: 24px; height: 24px; }
+
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx)
+{
+	.ig-b-16 {
+		background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-16@2x.png);
+		background-size: 60px 178px;
+	}
+	.ig-b-24 {
+		background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-24@2x.png);
+		background-size: 60px 178px;
+	}
+	.sprite-email { background-position: 0 -74px; width: 24px; height: 24px; }
+	.sprite-fb { background-position: 0 -246px; width: 24px; height: 24px; }
+	.sprite-gh { background-position: 0 -418px; width: 24px; height: 24px; }
+	.sprite-in { background-position: 0 -590px; width: 24px; height: 24px; }
+	.sprite-mk { background-position: 0 -762px; width: 24px; height: 24px; }
+	.sprite-skype { background-position: 0 -934px; width: 24px; height: 24px; }
+	.sprite-viber { background-position: 0 -1106px; width: 24px; height: 24px; }
+	.sprite-vk { background-position: 0 -1278px; width: 24px; height: 24px; }
+	.sprite-wapp { background-position: 0 -1450px; width: 24px; height: 24px; }
+}

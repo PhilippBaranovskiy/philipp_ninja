@@ -1,0 +1,39 @@
+/*
+Theme Name: philipp_ninja
+Theme URI: https://philipp.ninja
+Author: Phil Baranovskiy
+Author URI: http://philipp.ninja
+Description: ***
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: philipp, ninja
+*/
+
+@import "fonts/fonts.css";
+@import "custom_css/frontPage.css";
+@import "custom_css/timelineFromLunarians.css";
+@import "custom_css/topMenu.css";
+@import "custom_css/projectPage.css";
+@import "custom_css/testimonials.css";
+@import "custom_css/team.css";
+
+body {
+	background-color: #ecf1ef;
+	margin: 0px;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+
+.iconsSET {
+	font-family: "SvgIcons";
+}
+
+.pageFooter {
+	text-align: center;
+}
