@@ -1,9 +1,9 @@
-<footer class="pageFooter">
+<!-- <footer class="pageFooter">
 	<p>
 		<span class="iconsSET">H</span><br>
 		2008 &copy; <a href="http://philipp.ninja" title="Philipp Baranovskiy: UI / frontend developer">Philipp Baranovskiy</a>
 	</p>
-</footer>
+</footer> -->
 
 	<script src="<?php bloginfo("template_directory"); ?>/js/jquery-2.1.3.min.js"></script>
 	<!--<script src="<?php bloginfo("template_directory"); ?>/js/authLib.js"></script>
