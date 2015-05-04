@@ -10,6 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: philipp, ninja
 */
 
+@charset "utf-8";
+
 @import "fonts/fonts.css";
 @import "custom_css/frontPage.css";
 @import "custom_css/timelineFromLunarians.css";
@@ -18,9 +20,16 @@ Tags: philipp, ninja
 @import "custom_css/testimonials.css";
 @import "custom_css/team.css";
 
+@import "custom_css/single.css";
+
+@import "custom_css/likely.css";
+
 body {
 	background-color: #ecf1ef;
 	margin: 0px;
+}
+.post__title {
+	margin-top: 2rem;
 }
 
 /* Links

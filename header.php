@@ -17,11 +17,11 @@
 	<?php endif; ?>
 
 	<script type="text/javascript">
-		window.onload = function() {
+		if (window.scrollY && window.scrollY == 0) {
 			setTimeout(function() { window.scrollTo(0,1); }, 0);
 		}
 	</script>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body class="container">
 	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

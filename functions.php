@@ -33,7 +33,8 @@ function philipp_ninja_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 1200 );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -64,5 +65,15 @@ function philipp_ninja_setup() {
 }
 endif; // philipp_ninja_setup
 add_action( 'after_setup_theme', 'philipp_ninja_setup' );
+
+function prepareLibraries() {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', 'http://yastatic.net/jquery/2.1.3/jquery.min.js', false, '2.1.3', true);
+}
+function bottomPageScripts() {
+	prepareLibraries();
+	wp_enqueue_script('likely', get_template_directory_uri().'/js/likely.js', array('jquery'), '0.91', true);
+}
+add_action( 'wp_enqueue_scripts', 'bottomPageScripts' );
 
 ?>
