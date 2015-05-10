@@ -1,44 +1,39 @@
-.info
-{
+.info {
 	font-family: 'Raleway';
 	font-size: 1.6em;
 	font-size: 1.6rem;
 
-	max-width: 90%;
-	margin: auto;
+	margin: 20px;
+
 	padding: 25px 50px;
 
 	color: #303030;
-
-	border-radius: 3px;
-	background-color: #fff;
-	box-shadow: 0 0 3px 1px #c0c0c0;
-}
-@media (min-width: 460px)
-{
-	.info
-	{
-		width: 360px;
-		margin-top: 70px;
-
-	}
 }
 .info__name {
-	font-size: 1.6em;
-	font-size: 1.6rem;
+	font: 400 70px "Raleway thin";
+	text-align: center;
 }
 .info__status {
 	font-size: 0.6em;
 	margin-top: -15px;
+	text-align: center;
 }
-.info__list
-{
+.info__list {
 	font-size: 0.63em;
 	font-size: 1rem;
 
 	padding: 0;
 
+	text-align: center;
+
 	list-style: none;
+}
+.info__list__item {
+	display: inline;
+	line-height: 2em;
+}
+.info__list__item--separator {
+	width: 35px;
 }
 .info__list__item__link {
 	margin: 3px;
@@ -57,25 +52,20 @@
 	bottom: -8px;
 	background: url(../icons/icon_sprite.png) no-repeat top left;
 }
-.ig-b-
-{
+.ig-b- {
 	display: inline-block;
 	position: relative;
 }
-.ig-b- img
-{
+.ig-b- img {
 	visibility: hidden;
 }
-.ig-b-:hover
-{
+.ig-b-:hover {
 	background-position: 0 -60px;
 }
-.ig-b-:active
-{
+.ig-b-:active {
 	background-position: 0 -120px;
 }
-.ig-b-16
-{
+.ig-b-16 {
 	width: 16px;
 	height: 16px;
 
@@ -83,12 +73,9 @@
 
 	background: url(//badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0;
 }
-.ig-b-24
-{
+.ig-b-24 {
 	width: 24px;
 	height: 24px;
-
-	bottom: -5px;
 
 	background: url(//badges.instagram.com/static/images/ig-badge-sprite-24.png) no-repeat 0 0;
 }
@@ -105,8 +92,7 @@
 
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx)
-{
+only screen and (min-resolution: 2dppx) {
 	.ig-b-16 {
 		background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-16@2x.png);
 		background-size: 60px 178px;
