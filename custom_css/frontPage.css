@@ -1,7 +1,9 @@
+body {
+	padding-top: 40px !important;
+}
 .info {
 	font-family: 'Raleway';
-	font-size: 1.6em;
-	font-size: 1.6rem;
+	font-size: 16px;
 
 	margin: 20px;
 
@@ -25,13 +27,13 @@
 	}
 }
 .info__status {
-	font-size: 0.6em;
+	font-size: 1em;
 	margin-top: -15px;
 	text-align: center;
 }
 .info__list {
 	font-size: 0.63em;
-	font-size: 1rem;
+	font-size: 1em;
 
 	padding: 0;
 
@@ -48,6 +50,11 @@
 }
 .info__list__item__link {
 	margin: 3px;
+	opacity: 0;
+	transition: opacity 0.5s ease 0.5s;
+}
+.info__list--show .info__list__item__link {
+	opacity: 1;
 }
 .info__list__item__vision-link,
 .info__list__item__vision-link:hover {

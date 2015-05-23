@@ -11,10 +11,8 @@
 
 	<link rel="icon" href="<?php bloginfo("template_directory"); ?>/fav16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="<?php bloginfo("template_directory"); ?>/fav32.png" sizes="32x32" type="image/png">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/custom_css/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/style.css">
-	<?php if (!is_home()) : ?>
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/custom_css/skeleton.css">
-	<?php endif; ?>
 
 	<script type="text/javascript">
 		if (window.scrollY && window.scrollY == 0) {

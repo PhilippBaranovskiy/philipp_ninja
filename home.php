@@ -1,4 +1,19 @@
 <?php get_header(); ?>
+
+	<?php while ( have_posts() ) : the_post(); ?>
+	
+		<article class="post row">
+			<header class="twelve columns">
+				<h1><?php the_title(); ?></h1>
+				<?php the_post_thumbnail("thumbnail"); ?>
+			</header>
+			<div class="post-content twelve columns">
+				<?php the_excerpt(); ?>
+			</div>
+		</article>
+	
+	<?php endwhile; ?>
+
 	<div class="info">
 		<h1 class="info__name">Philipp Baranovskiy</h1>
 		<p class="info__status">Software engineer / UI developer</p>
