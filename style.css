@@ -22,14 +22,13 @@ Tags: philipp, ninja
 
 @import "custom_css/single.css";
 
+@import "custom_css/typography.css";
+
 @import "custom_css/likely.css";
 
 body {
 	background-color: #ecf1ef;
 	margin: 0px;
-}
-.post__title {
-	margin-top: 2rem;
 }
 
 /* Links

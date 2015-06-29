@@ -5,10 +5,10 @@
 		2008 &copy; <a href="http://philipp.ninja" title="Philipp Baranovskiy: UI / frontend developer">Philipp Baranovskiy</a>
 	</p> -->
 	<div class="likely">
-		<div class="twitter" data-via="philipp_ninja">Tweet it!</div>
-		<div class="facebook">Share in FB</div>
-		<div class="vkontakte">Share in VK</div>
-		<div class="gplus">Plus it!</div>
+		<div class="twitter" data-via="philipp_ninja"></div>
+		<div class="facebook"></div>
+		<div class="vkontakte"></div>
+		<div class="gplus"></div>
 		<!-- <div class="pinterest" data-media="i/pinnable.png">Запинить</div> -->
 	</div>
 </footer>

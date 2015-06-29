@@ -1,41 +1,45 @@
-body {
-	padding-top: 40px !important;
-}
 .info {
 	font-family: 'Raleway';
 	font-size: 16px;
 
-	margin: 20px;
+	margin: 20px 20px 70px;
+	padding: 25px 50px 80px;
 
-	padding: 25px 50px;
+	border-bottom: 1px dashed silver;
 
 	color: #303030;
+	position: relative;
+}
+.info:after {
+	content: "";
+	position: absolute;
+	bottom: -11px;
+	left: 48%;
+	background-color: #ecf1ef;
+	padding: 10px;
+	transform: rotate(-45deg);
+	color: silver;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 1px dashed silver;
+	border-color: transparent transparent silver silver;
 }
 .info__name {
-	font: 400 70px "Raleway thin";
+	font: 400 40px "Raleway thin";
 	text-align: center;
-}
-@media (min-width: 385px) and (max-width: 525px) {
-	.info__name {
-		font-size: 45px;
-	}
-}
-@media (min-width: 320px) and (max-width: 385px) {
-	.info__name {
-		font-size: 40px;
-		margin-bottom: 55px;
-	}
 }
 .info__status {
 	font-size: 1em;
-	margin-top: -15px;
 	text-align: center;
+	margin: 0;
 }
 .info__list {
 	font-size: 0.63em;
 	font-size: 1em;
 
 	padding: 0;
+	margin: 0;
 
 	text-align: center;
 
