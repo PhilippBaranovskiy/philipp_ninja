@@ -14,6 +14,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/custom_css/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/style.css">
 
+	<?php if (is_home()) : ?>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/custom_css/frontPage.css">
+	<?php endif; ?>
+
 	<script type="text/javascript">
 		if (window.scrollY && window.scrollY == 0) {
 			setTimeout(function() { window.scrollTo(0,1); }, 0);

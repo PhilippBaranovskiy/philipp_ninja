@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 	<div class="info">
 		<h1 class="info__name">Philipp Baranovskiy</h1>
 		<p class="info__status">Software engineer / UI developer</p>

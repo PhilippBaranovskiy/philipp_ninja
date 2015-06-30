@@ -13,7 +13,6 @@ Tags: philipp, ninja
 @charset "utf-8";
 
 @import "fonts/fonts.css";
-@import "custom_css/frontPage.css";
 @import "custom_css/timelineFromLunarians.css";
 @import "custom_css/topMenu.css";
 @import "custom_css/projectPage.css";
@@ -34,9 +33,11 @@ body {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: inherit; }
 a:hover {
   color: #0FA0CE; }
+a:visited {
+  color: gray; }
 
 .iconsSET {
 	font-family: "SvgIcons";
