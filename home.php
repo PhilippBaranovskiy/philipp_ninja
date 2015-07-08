@@ -35,9 +35,9 @@
 			<header class="twelve columns">
 				<h1 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 			</header>
-			<div class="post-content twelve columns">
+			<!-- <div class="post-content twelve columns">
 				<?php the_excerpt(); ?>
-			</div>
+			</div> -->
 		</article>
 	
 	<?php endwhile; ?>
