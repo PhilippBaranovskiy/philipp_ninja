@@ -1,13 +1,11 @@
 <!doctype html>
 <html>
 <head>
-	<title><?php bloginfo('name'); ?></title>
-
 	<meta charset="utf-8">
 	<meta name="keywords" content="philipp phil baranovskiy ninja">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
-	<meta name="viewport" content="initial-scale = 1, width = device-width">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
 
 	<link rel="icon" href="<?php bloginfo("template_directory"); ?>/fav16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="<?php bloginfo("template_directory"); ?>/fav32.png" sizes="32x32" type="image/png">

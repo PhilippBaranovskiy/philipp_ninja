@@ -18,7 +18,7 @@ function philipp_ninja_setup() {
 	// load_theme_textdomain( 'philipp_ninja', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
-	// add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'automatic-feed-links' );
 
 	/*
 	 * Let WordPress manage the document title.
@@ -26,7 +26,7 @@ function philipp_ninja_setup() {
 	 * hard-coded <title> tag in the document head, and expect WordPress to
 	 * provide it for us.
 	 */
-	// add_theme_support( 'title-tag' );
+	add_theme_support( 'title-tag' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
