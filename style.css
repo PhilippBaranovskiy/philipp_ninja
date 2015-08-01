@@ -23,8 +23,6 @@ Tags: philipp, ninja
 
 @import "custom_css/typography.css";
 
-@import "custom_css/likely.css";
-
 body {
 	background-color: #ecf1ef;
 	margin: 0px;
@@ -45,4 +43,5 @@ a:visited {
 
 .pageFooter {
 	text-align: center;
+	margin-bottom: 30px;
 }

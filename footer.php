@@ -1,16 +1,20 @@
-<?php if (!is_home()) : ?>
+<?php if (is_single()) : ?>
 <footer class="pageFooter">
 	<!-- <p>
 		<span class="iconsSET">H</span><br>
 		2008 &copy; <a href="http://philipp.ninja" title="Philipp Baranovskiy: UI / frontend developer">Philipp Baranovskiy</a>
 	</p> -->
-	<div class="likely">
+	<!-- <div class="likely">
 		<div class="twitter" data-via="philipp_ninja"></div>
 		<div class="facebook"></div>
 		<div class="vkontakte"></div>
-		<div class="gplus"></div>
+		<div class="gplus"></div> -->
 		<!-- <div class="pinterest" data-media="i/pinnable.png">Запинить</div> -->
-	</div>
+	<!-- </div> -->
+	<div class="yashare-auto-init" data-yashareL10n="ru"
+		 data-yashareType="small"
+		 data-yashareQuickServices="vkontakte,facebook,twitter,gplus"
+		 data-yashareTheme="counter"></div>
 </footer>
 <?php endif; ?>
 	<?php wp_footer(); ?>

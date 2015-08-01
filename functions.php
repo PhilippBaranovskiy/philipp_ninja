@@ -68,11 +68,11 @@ add_action( 'after_setup_theme', 'philipp_ninja_setup' );
 
 function prepareLibraries() {
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', 'http://yastatic.net/jquery/2.1.3/jquery.min.js', false, '2.1.3', true);
+	wp_register_script('jquery', '//yastatic.net/jquery/2.1.3/jquery.min.js', false, '2.1.3', true);
 }
 function bottomPageScripts() {
 	prepareLibraries();
-	wp_enqueue_script('likely', get_template_directory_uri().'/js/likely.js', array('jquery'), '0.91', true);
+	wp_enqueue_script('sharing', '//yastatic.net/share/share.js', array('jquery'), '1.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'bottomPageScripts' );
 
