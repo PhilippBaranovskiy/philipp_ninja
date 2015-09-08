@@ -135,6 +135,7 @@ function pninja_save_extra_profile_fields( $user_id ) {
  *	 end of Custom profile fields block.
  */
 
+require_once( trailingslashit( get_template_directory() ) . 'custom-functions.php' );
 
 
 function pninja_prepare_libraries() {

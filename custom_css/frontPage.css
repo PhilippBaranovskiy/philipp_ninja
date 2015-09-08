@@ -59,11 +59,6 @@
 }
 .info__list__item__link {
 	margin: 3px;
-	opacity: 0;
-	transition: opacity 0.5s ease 0.5s;
-}
-.info__list--show .info__list__item__link {
-	opacity: 1;
 }
 .info__list__item__vision-link,
 .info__list__item__vision-link:hover {
