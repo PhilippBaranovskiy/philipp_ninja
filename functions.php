@@ -1,4 +1,12 @@
 <?php
+
+/*
+ * 		Set up the Hybrid Core framework.
+ *		See documentation: https://github.com/justintadlock/hybrid-core/wiki/Setup
+ */
+require_once( trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php' );
+#new Hybrid();
+
 if ( ! function_exists( 'philipp_ninja_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -68,15 +76,14 @@ add_action( 'after_setup_theme', 'philipp_ninja_setup' );
 
 
 
-###
-#
-# Custom profile fields
-#
+/*
+ *		Custom profile fields
+ */
 
-add_action( 'show_user_profile', 'show_extra_profile_fields' );
-add_action( 'edit_user_profile', 'show_extra_profile_fields' );
+add_action( 'show_user_profile', 'pninja_show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'pninja_show_extra_profile_fields' );
 
-function show_extra_profile_fields( $user ) {
+function pninja_show_extra_profile_fields( $user ) {
 
 ?>
 	<h3>Phone</h3>
@@ -109,10 +116,10 @@ function show_extra_profile_fields( $user ) {
 	</table>
 <?php }
 
-add_action( 'personal_options_update', 'save_extra_profile_fields' );
-add_action( 'edit_user_profile_update', 'save_extra_profile_fields' );
+add_action( 'personal_options_update', 'pninja_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'pninja_save_extra_profile_fields' );
 
-function save_extra_profile_fields( $user_id ) {
+function pninja_save_extra_profile_fields( $user_id ) {
 
 	if ( !current_user_can( 'edit_user', $user_id ) )
 		return false;
@@ -124,21 +131,20 @@ function save_extra_profile_fields( $user_id ) {
 	}
 }
 
-#
-#	 end of Custom profile fields block.
-#
-###
+/*
+ *	 end of Custom profile fields block.
+ */
 
 
 
-function prepareLibraries() {
+function pninja_prepare_libraries() {
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', '//yastatic.net/jquery/2.1.3/jquery.min.js', false, '2.1.3', true);
 }
-function bottomPageScripts() {
-	prepareLibraries();
+function pninja_bottom_page_scripts() {
+	pninja_prepare_libraries();
 	wp_enqueue_script('sharing', '//yastatic.net/share/share.js', array('jquery'), '1.0', true);
 }
-add_action( 'wp_enqueue_scripts', 'bottomPageScripts' );
+add_action( 'wp_enqueue_scripts', 'pninja_bottom_page_scripts' );
 
 ?>
