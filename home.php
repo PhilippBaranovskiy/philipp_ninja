@@ -24,8 +24,9 @@
 		</ul>
 		<ul class="info__list">
  			<li class="info__list__item">
-				<a class="info__list__item__vision-link" href="tel:375257689528">+375 (25) 768-95-28</a>
-				/
+ 				<?php $phone = my_meta('phone', 1); if ($phone) : ?>
+					<a class="info__list__item__vision-link" href="tel:375257689528">+375 (25) 768-95-28</a>
+				<?php endif; ?> /
 				<a class="info__list__item__vision-link" href="mailto:<?php echo my_meta('user_email', 1); ?>">
 					<?php echo my_meta('user_email', 1); ?>
 				</a>
