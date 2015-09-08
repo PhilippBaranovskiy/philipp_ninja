@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 
 	<div class="info">
-		<h1 class="info__name">Philipp Baranovskiy</h1>
+		<h1 class="info__name"><?php
+			$siteOwner = array();
+			$siteOwner[] = esc_attr(get_the_author_meta('user_firstname', 1));
+			$siteOwner[] = esc_attr(get_the_author_meta('user_lastname', 1));
+			echo join(' ', $siteOwner);
+		?></h1>
 		<p class="info__status">Software engineer / UI developer</p>
 		<ul class="info__list">
 			<li class="info__list__item"><li class="info__list__item">
@@ -24,7 +29,9 @@
  			<li class="info__list__item">
 				<a class="info__list__item__vision-link" href="tel:375257689528">+375 (25) 768-95-28</a>
 				/
-				<a class="info__list__item__vision-link" href="mailto:me@philipp.ninja">me@philipp.ninja</a>
+				<a class="info__list__item__vision-link" href="mailto:<?php echo esc_attr(get_the_author_meta('user_email', 1)); ?>">
+					<?php echo esc_attr(get_the_author_meta('user_email', 1)); ?>
+				</a>
 			</li>
 		</ul>
 	</div>
