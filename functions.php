@@ -66,6 +66,71 @@ function philipp_ninja_setup() {
 endif; // philipp_ninja_setup
 add_action( 'after_setup_theme', 'philipp_ninja_setup' );
 
+
+
+###
+#
+# Custom profile fields
+#
+
+add_action( 'show_user_profile', 'show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'show_extra_profile_fields' );
+
+function show_extra_profile_fields( $user ) {
+
+?>
+	<h3>Phone</h3>
+	<table class="form-table">
+		<tr>
+			<th><label for="phone">Phone</label></th>
+			<td>
+				<input type="tel" name="phone" id="phone" class="regular-text code"
+					value="<?php echo esc_attr(get_the_author_meta( 'phone', $user->ID )); ?>">
+			</td>
+		</tr>
+	</table>
+	<h3>Links</h3>
+	<table class="form-table">
+<?php
+		$fields = array('Twitter', 'Github', 'Linkedin', 'VK', 'Instagram', 'FB');
+		foreach ($fields as $field) {
+			$field = strtolower($field);
+?>
+			<tr>
+				<th><label for="<?php echo $field; ?>"><?php echo ucwords($field); ?></label></th>
+				<td>
+					<input type="text" name="<?php echo $field; ?>" id="<?php echo $field; ?>" class="regular-text code"
+						value="<?php echo esc_attr(get_the_author_meta( $field, $user->ID )); ?>">
+				</td>
+			</tr>
+<?php
+		}
+?>
+	</table>
+<?php }
+
+add_action( 'personal_options_update', 'save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'save_extra_profile_fields' );
+
+function save_extra_profile_fields( $user_id ) {
+
+	if ( !current_user_can( 'edit_user', $user_id ) )
+		return false;
+
+	$fields = array('Twitter', 'Github', 'Linkedin', 'VK', 'Instagram', 'FB', 'phone');
+	foreach ($fields as $field) {
+		$field = strtolower($field);
+		update_usermeta( $user_id, $field, $_POST[$field] );
+	}
+}
+
+#
+#	 end of Custom profile fields block.
+#
+###
+
+
+
 function prepareLibraries() {
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', '//yastatic.net/jquery/2.1.3/jquery.min.js', false, '2.1.3', true);
