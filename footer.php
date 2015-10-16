@@ -11,10 +11,7 @@
 		<div class="gplus"></div> -->
 		<!-- <div class="pinterest" data-media="i/pinnable.png">Запинить</div> -->
 	<!-- </div> -->
-	<div class="yashare-auto-init" data-yashareL10n="ru"
-		 data-yashareType="small"
-		 data-yashareQuickServices="vkontakte,facebook,twitter,gplus"
-		 data-yashareTheme="counter"></div>
+
 </footer>
 <?php endif; ?>
 	<?php wp_footer(); ?>
