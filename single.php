@@ -5,18 +5,28 @@
 		<main class="row">
 			<article class="post twelve columns">
 				<header class="post__header">
+					<p>
+						<span style="font-size: 30px; position: relative; bottom: -4px;">⬑</span>
+						<a href="<?php echo esc_url( home_url() ); ?>">philipp.ninja</a>
+					</p>
 					<h1 class="post__title"><?php the_title(); ?></h1>
 					<?php the_post_thumbnail("thumbnail"); ?>
 				</header>
 				<div class="post-content twelve columns">
 					<?php the_content(); ?>
 				</div>
-<footer class="pageFooter">
-	<div class="yashare-auto-init" data-yashareL10n="ru"
-		 data-yashareType="small"
-		 data-yashareQuickServices="vkontakte,facebook,twitter,gplus"
-		 data-yashareTheme="counter"></div>
-		</footer>
+			
+			<footer class="pageFooter">
+				<div class="yashare-auto-init" data-yashareL10n="ru"
+					 data-yashareType="small"
+					 data-yashareQuickServices="vkontakte,facebook,twitter,gplus"
+					 data-yashareTheme="counter"></div>
+			</footer>
+
+			<p>
+				<span style="font-size: 30px; position: relative; bottom: -4px;">⬑</span>
+				<a href="<?php echo esc_url( home_url() ); ?>">philipp.ninja</a>
+			</p>
 
 			<!-- Begin MailChimp Signup Form -->
 			<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
