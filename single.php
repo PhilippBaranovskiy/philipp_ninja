@@ -23,11 +23,6 @@
 					 data-yashareTheme="counter"></div>
 			</footer>
 
-			<p>
-				<span style="font-size: 30px; position: relative; bottom: -4px;">⬑</span>
-				<a href="<?php echo esc_url( home_url() ); ?>">philipp.ninja</a>
-			</p>
-
 			<!-- Begin MailChimp Signup Form -->
 			<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 			<style type="text/css">
@@ -48,6 +43,11 @@
 			</div>
 
 			<!--End mc_embed_signup-->
+
+			<p>
+				<span style="font-size: 30px; position: relative; bottom: -4px;">⬑</span>
+				<a href="<?php echo esc_url( home_url() ); ?>">philipp.ninja</a>
+			</p>
 
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
