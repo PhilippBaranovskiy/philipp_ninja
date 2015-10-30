@@ -21,15 +21,22 @@
 		margin: 0;
 	}
 	.post__header {
+		position: relative;
 		width: 100%;
 		height: 100vh;
-		line-height: 100vh;
 		text-align: center;
 	}
+	.post__title,
+	.post__date {
+		margin: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
 	.post__title {
-		display: inline-block;
-		vertical-align: middle;
-
-		line-height: normal;
+		bottom: 50%;
+	}
+	.post__date {
+		top: 50%;
 	}
 }

@@ -23,6 +23,7 @@
 			<?php endif; ?>
 			<header class="post__header">
 				<h1 class="post__title"><?php the_title(); ?></h1>
+				<time datetime="<?php echo get_the_date('c'); ?>" pubdate class="post__date"><?php echo get_the_date(); ?></time>
 				<!-- <?php the_post_thumbnail("thumbnail"); ?> -->
 			</header>
 			<article class="container">
