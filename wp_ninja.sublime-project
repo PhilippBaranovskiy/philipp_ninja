@@ -3,9 +3,6 @@
 	[
 		{
 			"path": "/Applications/wordpress-4.1.1/apps/wordpress/htdocs/wp-content/themes/philipp_ninja"
-		},
-		{
-			"path": "/Applications/wordpress-4.1.1/apps/wordpress/htdocs/wp-includes"
 		}
 	]
 }

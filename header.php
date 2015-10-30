@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="utf-8">
 	<meta name="keywords" content="philipp phil baranovskiy ninja">
