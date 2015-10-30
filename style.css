@@ -19,13 +19,16 @@ Tags: philipp, ninja
 @import "custom_css/testimonials.css";
 @import "custom_css/team.css";
 
-@import "custom_css/single.css";
-
 @import "custom_css/typography.css";
+@import "custom_css/single.css";
 
 body {
 	background-color: #ecf1ef;
 	margin: 0px;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 /* Links

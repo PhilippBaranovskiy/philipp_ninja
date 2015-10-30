@@ -23,5 +23,5 @@
 	</script>
 	<?php wp_head(); ?>
 </head>
-<body class="container">
+<body>
 	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

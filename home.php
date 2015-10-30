@@ -7,7 +7,7 @@
 			$siteOwner[] = my_meta('user_lastname', 1);
 			echo join(' ', $siteOwner);
 		?></h1>
-		<p class="info__status">Software engineer / UI developer</p>
+		<p class="info__status"><?php pll_e('Software engineer / UI developer'); ?></p>
 		<ul class="info__list">
 			<li class="info__list__item">
 				<a title="GitHub" href="<?php echo my_meta('github', 1); ?>" class="info__list__item__link info__list__item__link--icon sprite-gh"></a>
