@@ -39,6 +39,21 @@
 				</div>
 			
 				<footer class="pageFooter">
+						<?php
+							$postCategoryIDs = wp_get_post_categories($post->ID);
+							$is_ux = false;
+							foreach ($postCategoryIDs as $catID) {
+								$slug = get_category($catID)->slug;
+								if ( $slug == 'ux-en' || $slug == 'ux-ru' || $slug == 'ux-es' ) {
+									$is_ux = true;
+								}
+							}
+						?>
+						<?php if ($is_ux) : ?>
+							<a href="https://telegram.me/uxblog" title="<?php ppl_e('Subscribe to only UX related posts via our Telegram channel'); ?>">
+								<img src="<?php bloginfo("template_directory"); ?>/img/tg-en@2x.png">
+							</a>
+						<?php endif; ?>
 					<div class="yashare-auto-init" data-yashareL10n="ru"
 						 data-yashareType="small"
 						 data-yashareQuickServices="vkontakte,facebook,twitter,gplus"
