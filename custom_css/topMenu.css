@@ -7,6 +7,11 @@
 	padding: 10px;
 	list-style: none;
 	text-align: center;
+	position: sticky;
+	top: 0;
+	background-color: #ecf1ef;
+	z-index: 1;
+	border-bottom: 1px solid silver;
 }
 #menu-top-menu .menu-item {
 	display: inline;

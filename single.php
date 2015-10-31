@@ -12,7 +12,7 @@
 					}
 				}
 			?>
-			<?php if ($coverImage) : ?>
+			<?php if (isset($coverImage) && $coverImage) : ?>
 				<style>
 					@media (min-width: 960px) and (orientation: landscape) {
 						.post__header {
@@ -26,6 +26,12 @@
 				<time datetime="<?php echo get_the_date('c'); ?>" pubdate class="post__date"><?php echo get_the_date(); ?></time>
 				<!-- <?php the_post_thumbnail("thumbnail"); ?> -->
 			</header>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'primary',
+						'container' => 'false'
+					) );
+				?>
 			<article class="container">
 				<div class="post-content twelve columns">
 					<?php the_content(); ?>
@@ -58,11 +64,6 @@
 				</div>
 
 				<!--End mc_embed_signup-->
-
-				<p>
-					<span style="font-size: 30px; position: relative; bottom: -4px;">⬑</span>
-					<a href="<?php echo esc_url( home_url() ); ?>">philipp.ninja</a>
-				</p>
 
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">
