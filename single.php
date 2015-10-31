@@ -29,7 +29,8 @@
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'primary',
-						'container' => 'false'
+						'container' => 'false',
+						'menu_id' => 'menu-top-menu'
 					) );
 				?>
 			<article class="container">

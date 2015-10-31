@@ -15,6 +15,9 @@
 	<?php if (is_home()) : ?>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/custom_css/frontPage.css">
 	<?php endif; ?>
+	<?php if (is_single()) : ?>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/custom_css/single.css">
+	<?php endif; ?>
 
 	<script type="text/javascript">
 		if (window.scrollY && window.scrollY == 0) {
