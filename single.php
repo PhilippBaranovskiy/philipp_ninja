@@ -11,12 +11,23 @@
 						$coverImage = $coverImage[0];
 					}
 				}
+				$coverTextColor = get_post_meta($post->ID, 'hue_of_image');
+				if (isset($coverTextColor) && $coverTextColor[0]) {
+					if ($coverTextColor[0] == 'shadow') {
+						$coverTextColor = 'text-shadow: 0px 0px 5px white;';
+					} else {
+						$coverTextColor = 'color: ' . $coverTextColor[0] . ';';
+					}
+				} else {
+					$coverTextColor = 'color: black;';
+				}
 			?>
 			<?php if (isset($coverImage) && $coverImage) : ?>
 				<style>
 					@media (min-width: 480px) and (orientation: landscape) {
 						.post__header {
 							background-image: url(<?php echo $coverImage; ?>);
+							<?php echo $coverTextColor; ?>
 						}
 					}
 				</style>
