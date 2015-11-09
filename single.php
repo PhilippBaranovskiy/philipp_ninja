@@ -14,7 +14,7 @@
 			?>
 			<?php if (isset($coverImage) && $coverImage) : ?>
 				<style>
-					@media (min-width: 960px) and (orientation: landscape) {
+					@media (min-width: 480px) and (orientation: landscape) {
 						.post__header {
 							background-image: url(<?php echo $coverImage; ?>);
 						}
@@ -24,7 +24,6 @@
 			<header class="post__header">
 				<h1 class="post__title"><?php the_title(); ?></h1>
 				<time datetime="<?php echo get_the_date('c'); ?>" pubdate class="post__date"><?php echo get_the_date(); ?></time>
-				<!-- <?php the_post_thumbnail("thumbnail"); ?> -->
 			</header>
 				<?php
 					wp_nav_menu( array(
