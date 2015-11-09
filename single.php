@@ -79,7 +79,7 @@
 				<div id="mc_embed_signup">
 				<form action="//ninja.us11.list-manage.com/subscribe/post?u=39e02a0b24cc24daa5ca5a8b8&amp;id=b5b5434a1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    <div id="mc_embed_signup_scroll">
-					<label for="mce-EMAIL">Получать посты на почту, около 2 раз в месяц:</label>
+					<label for="mce-EMAIL"><?php pll_e('Получать посты на почту, около 2 раз в месяц:');?></label>
 					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_39e02a0b24cc24daa5ca5a8b8_b5b5434a1b" tabindex="-1" value=""></div>
